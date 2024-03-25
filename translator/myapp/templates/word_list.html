@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<table class="words_list">
+    <tbody>
+    <thead>
+    <tr>
+        <th>Origin</th>
+        <th>Translate</th>
+    </tr>
+    </thead>
+    <tbody class="words_list">
+    {% for ru, en in data %}
+        <tr>
+            <td>{{ ru }}</td>
+            <td>{{ en }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </tbody>
+</table>
+{% endblock %}
