@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Добавьте слово и его перевод:</h2>
+<form action="" method="post">
+  {% csrf_token %}
+  <label for="word1">Оригинал:</label>
+  <input name="word1" id="word1" placeholder="На русском">
+  <br>
+  <br>
+  <label for="word2">Перевод:</label>
+  <input name="word2" id="word2" placeholder="На английском">
+  <br>
+  <br>
+  <input type="submit" value="Отправить">
+</form>
+{% endblock %}
